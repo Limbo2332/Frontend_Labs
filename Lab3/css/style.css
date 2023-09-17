@@ -13,30 +13,45 @@ p {
 
 .float-model,
 .float-header,
-.float-footer {
+.float-footer,
+.flex-model,
+.flex-header,
+.flex-footer {
   width: 100%;
 }
 
 .float-header,
-.float-footer {
+.float-footer,
+.flex-header,
+.flex-footer {
   height: 100px;
   background-color: yellow;
 }
 
 .float-left-side,
-.float-right-side {
+.float-right-side,
+.flex-left-side,
+.flex-right-side {
   height: 400px;
   width: 50%;
 }
 
+.float-left-side,
+.flex-left-side {
+  background-color: blueviolet;
+}
+
+.float-right-side,
+.flex-right-side {
+  background-color: chartreuse;
+}
+
 .float-left-side {
   float: left;
-  background-color: blueviolet;
 }
 
 .float-right-side {
   float: right;
-  background-color: chartreuse;
 }
 
 .div-text,
@@ -54,4 +69,19 @@ p {
 
 .clear {
   clear: both;
+}
+
+/* Завдання 2 */
+
+.flex-model,
+.flex-sides {
+  display: flex;
+}
+
+.flex-model {
+  flex-direction: column;
+}
+
+.mt-48px {
+  margin-top: 48px;
 }
