@@ -28,7 +28,8 @@ tr {
   background-color: #f5f501;
 }
 
-/* Завдання 2 варіант 1 */
+/* Завдання 2 */
+
 .traffic {
   margin: 0 auto;
   height: 156px;
@@ -38,25 +39,57 @@ tr {
   position: relative;
 }
 
-.ball {
-  position: absolute;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  left: 14px;
-}
-
 .red-ball {
   background-color: red;
-  top: 12px;
 }
 
 .yellow-ball {
   background-color: yellow;
-  top: 60px;
 }
 
 .green-ball {
   background-color: green;
+}
+
+.red-ball,
+.yellow-ball,
+.green-ball {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+/* Завдання 2 варіант 1 */
+
+.red-position-ball,
+.yellow-position-ball,
+.green-position-ball {
+  position: absolute;
+  left: 14px;
+}
+
+.red-position-ball {
+  top: 12px;
+}
+
+.yellow-position-ball {
+  top: 60px;
+}
+
+.green-position-ball {
   bottom: 12px;
+}
+
+/* Завдання 2 варіант 2 */
+
+.red-transform-ball {
+  transform: translate(14px, 12px);
+}
+
+.yellow-transform-ball {
+  transform: translate(14px, 24px);
+}
+
+.green-transform-ball {
+  transform: translate(14px, 36px);
 }
