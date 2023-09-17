@@ -1,0 +1,57 @@
+body {
+  width: 100%;
+  margin: 0;
+
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+/* Завдання 1 */
+
+.float-model,
+.float-header,
+.float-footer {
+  width: 100%;
+}
+
+.float-header,
+.float-footer {
+  height: 100px;
+  background-color: yellow;
+}
+
+.float-left-side,
+.float-right-side {
+  height: 400px;
+  width: 50%;
+}
+
+.float-left-side {
+  float: left;
+  background-color: blueviolet;
+}
+
+.float-right-side {
+  float: right;
+  background-color: chartreuse;
+}
+
+.div-text,
+.div-text-aside {
+  font-size: 36px;
+}
+
+.div-text {
+  padding: 24px 0;
+}
+
+.div-text-aside {
+  padding: 150px 0;
+}
+
+.clear {
+  clear: both;
+}
