@@ -13,9 +13,12 @@ table {
 td,
 tr {
   border: 1px solid black;
-  padding: 50px;
-
   color: #332e32;
+}
+
+td {
+  height: 100px;
+  min-width: 100px;
 }
 
 .first-row,
