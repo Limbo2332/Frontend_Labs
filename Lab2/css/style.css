@@ -1,0 +1,27 @@
+.text-align {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td,
+tr {
+  border: 1px solid black;
+  padding: 50px;
+
+  color: #332e32;
+}
+
+.first-row,
+.second-row:hover {
+  background-color: #018f8f;
+}
+
+.second-row,
+.first-row:hover {
+  background-color: #f5f501;
+}
