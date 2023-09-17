@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+/* Завдання 1 */
+
 table {
   width: 100%;
   border: 1px solid black;
@@ -24,4 +26,37 @@ tr {
 .second-row,
 .first-row:hover {
   background-color: #f5f501;
+}
+
+/* Завдання 2 варіант 1 */
+.traffic {
+  margin: 0 auto;
+  height: 156px;
+  background-color: #d3d3d3;
+  border-radius: 16px;
+  width: 64px;
+  position: relative;
+}
+
+.ball {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  left: 14px;
+}
+
+.red-ball {
+  background-color: red;
+  top: 12px;
+}
+
+.yellow-ball {
+  background-color: yellow;
+  top: 60px;
+}
+
+.green-ball {
+  background-color: green;
+  bottom: 12px;
 }
