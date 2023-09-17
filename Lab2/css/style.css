@@ -1,0 +1,95 @@
+.text-align {
+  text-align: center;
+}
+
+/* Завдання 1 */
+
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td,
+tr {
+  border: 1px solid black;
+  padding: 50px;
+
+  color: #332e32;
+}
+
+.first-row,
+.second-row:hover {
+  background-color: #018f8f;
+}
+
+.second-row,
+.first-row:hover {
+  background-color: #f5f501;
+}
+
+/* Завдання 2 */
+
+.traffic {
+  margin: 0 auto;
+  height: 156px;
+  background-color: #d3d3d3;
+  border-radius: 16px;
+  width: 64px;
+  position: relative;
+}
+
+.red-ball {
+  background-color: red;
+}
+
+.yellow-ball {
+  background-color: yellow;
+}
+
+.green-ball {
+  background-color: green;
+}
+
+.red-ball,
+.yellow-ball,
+.green-ball {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+/* Завдання 2 варіант 1 */
+
+.red-position-ball,
+.yellow-position-ball,
+.green-position-ball {
+  position: absolute;
+  left: 14px;
+}
+
+.red-position-ball {
+  top: 12px;
+}
+
+.yellow-position-ball {
+  top: 60px;
+}
+
+.green-position-ball {
+  bottom: 12px;
+}
+
+/* Завдання 2 варіант 2 */
+
+.red-transform-ball {
+  transform: translate(14px, 12px);
+}
+
+.yellow-transform-ball {
+  transform: translate(14px, 24px);
+}
+
+.green-transform-ball {
+  transform: translate(14px, 36px);
+}
