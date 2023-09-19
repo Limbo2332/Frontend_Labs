@@ -1,6 +1,7 @@
+// Завдання 1
 const form = document.getElementById('registrationForm');
-
 const validationErrorClassName = 'wrong-data';
+const validationPassedClassName = 'correct-data';
 
 const PIBRegex = /^[А-Яа-яіІїЇ]{6}\s[А-Яа-яіІїЇ]{1}[.]\s[А-Яа-яіІїЇ]{1}[.]$/;
 const variantRegex = /^[0-9]{1,2}$/;
@@ -23,32 +24,42 @@ form.addEventListener('submit', (event) => {
 
   if (!PIBRegex.test(pib.value)) {
     pib.classList.add(validationErrorClassName);
+    pib.classList.remove(validationPassedClassName);
   } else {
     pib.classList.remove(validationErrorClassName);
+    pib.classList.add(validationPassedClassName);
   }
 
   if (!variantRegex.test(variant.value)) {
     variant.classList.add(validationErrorClassName);
+    variant.classList.remove(validationPassedClassName);
   } else {
     variant.classList.remove(validationErrorClassName);
+    variant.classList.add(validationPassedClassName);
   }
 
   if (!groupRegex.test(group.value)) {
     group.classList.add(validationErrorClassName);
+    group.classList.remove(validationPassedClassName);
   } else {
     group.classList.remove(validationErrorClassName);
+    group.classList.add(validationPassedClassName);
   }
 
   if (!phoneRegex.test(phone.value)) {
     phone.classList.add(validationErrorClassName);
+    phone.classList.remove(validationPassedClassName);
   } else {
     phone.classList.remove(validationErrorClassName);
+    phone.classList.add(validationPassedClassName);
   }
 
   if (!idCardRegex.test(idCard.value)) {
     idCard.classList.add(validationErrorClassName);
+    idCard.classList.remove(validationPassedClassName);
   } else {
     idCard.classList.remove(validationErrorClassName);
+    idCard.classList.add(validationPassedClassName);
   }
 
   if (!pib.classList.contains(validationErrorClassName)
@@ -66,4 +77,41 @@ form.addEventListener('submit', (event) => {
   }
 
   event.preventDefault();
+})
+
+// Завдання 2
+const table = document.getElementById('table');
+const colorPalitre = document.getElementById('color');
+
+for (let i = 0; i < 6; i++) {
+  const tr = document.createElement('tr');
+  for (let j = 1; j <= 6; j++) {
+    const td = document.createElement('td');
+    const value = (i * 6) + j;
+
+    if (value === 1) {
+      td.id = 'tableVariant';
+    }
+
+    td.innerText = value;
+
+    tr.appendChild(td);
+  }
+  table.appendChild(tr);
+}
+
+const tableVariant = document.getElementById('tableVariant');
+
+tableVariant.addEventListener('mouseover', () => {
+  const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+  tableVariant.style.backgroundColor = randomColor;
+})
+
+tableVariant.addEventListener('click', () => {
+  tableVariant.style.backgroundColor = colorPalitre.value;
+})
+
+tableVariant.addEventListener('dblclick', () => {
+  tableVariant.parentElement.style.backgroundColor = colorPalitre.value;
 })
