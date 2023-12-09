@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import Task1 from "./components/Task1";
+import Task2 from "./components/Task2";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/task1",
     Component: Task1,
+  },
+  {
+    path: "/task2",
+    Component: Task2,
   },
 ]);
 

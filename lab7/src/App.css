@@ -16,3 +16,8 @@
   background-color: aqua;
   color: brown;
 }
+
+.max-width {
+  margin: 0 auto;
+  max-width: 60%;
+}
