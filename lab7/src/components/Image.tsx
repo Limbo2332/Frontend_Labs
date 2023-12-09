@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import KyivImage from '../images/Kyiv.jpg';
-import KyivImage2 from '../images/Kyiv2.jpg';
+import KyivImage from "../images/Kyiv.jpg";
+import KyivImage2 from "../images/Kyiv2.jpg";
 
 const Image = () => {
   const [toShowImage, setToShowImage] = useState(false);
@@ -39,7 +39,7 @@ const Image = () => {
         </a>
       </div>
       {toShowImage && <img src={KyivImage2} alt="Kyiv" width={imageWidth} />}
-      <div>
+      <div className="mt-3">
         <button onClick={() => setToShowImage(true)}>Додати</button>
         <button onClick={increaseSizeOfImage}>Збільшити</button>
         <button onClick={decreaseSizeOfImage}>Зменшити</button>

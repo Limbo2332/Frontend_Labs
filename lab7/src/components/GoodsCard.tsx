@@ -1,5 +1,3 @@
-import "bootstrap/dist/css/bootstrap.css";
-
 import { ICard } from "./Task2";
 
 const GoodsCard = ({ imagePath, name, price }: ICard) => {

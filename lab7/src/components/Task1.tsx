@@ -4,11 +4,11 @@ import Image from "./Image";
 
 const Task1 = () => {
   return (
-    <>
+    <div className="p-4">
       <Header />
       <Content />
       <Image />
-    </>
+    </div>
   );
 };
 
